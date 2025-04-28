@@ -1,11 +1,13 @@
 import React from 'react'
-import logo from '../images/logo-cafe-sem-filtro-transparent.png'
+import logo from '../assets/images/logo.png'
 import { Link } from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 const Footer = () => {
   return (
     <footer>
+        
         <div className='collum-3'>
             <div className='image-container'>
             <img src={logo} alt='Logo café sem filtro'/>
@@ -18,7 +20,7 @@ const Footer = () => {
         </div>
         <div className='collum-3'>
             <div className='cardapio-link'>
-                <Link to='/'>Veja o Cardápio</Link>
+                  <AnchorLink to="#cardapio">Veja o Cardápio</AnchorLink>
             </div>
             <div className='slogan'>
                 <p>

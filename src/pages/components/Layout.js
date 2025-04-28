@@ -1,17 +1,19 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-//no caso do css nao precisa dizer o que esta importando, apenas colocar o caminho completo
-import "./layout.css"
+import "../assets/images/logo.png"
+import "../assets/css/main.css" 
 
-const Layout = ({children}) => {
-    //cria o layout padrao de todas as paginas
+const Layout = ({ children }) => {
   return (
-    /* OU se usa apenas <> ... </>*/
     <React.Fragment>
-      <Navbar/>
+      {/* Imagem de fundo */}
+      <div className="background-image"></div>
+
+      {/* Conteúdo principal */}
+      <Navbar />
       {children}
-      <Footer/>
+      <Footer />
     </React.Fragment>
   )
 }
