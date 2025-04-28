@@ -16,8 +16,8 @@ const Landing = () => {
           <section className='about-page'>
             <article>
             <h1>Bem-vindo ao</h1>
-            <h2>Café Sem Filtro</h2>
-            <h5>
+            <h2 className="playfair-title">Café Sem Filtro</h2>
+            <h5 className="cal-sans-regular">
               Café Sem Filtro é uma cafeteria artesanal com a proposta de ser saudável, original e acolhedora. 
               Aqui, o café vai além da bebida, é uma experiência sensorial e afetiva. 
               Trabalhamos com grãos selecionados de pequenos produtores, cultivados de forma sustentável e preparados com métodos especiais como prensa francesa, siphon e cold brew.
@@ -68,11 +68,11 @@ const Landing = () => {
       className='example-img'
     />
     <h4>Experiências Interativas</h4>
-    <p>Promovemos workshops de barista e degustações de café semanalmente, onde os clientes podem aprender sobre a arte do café e experimentar a preparação de suas próprias bebidas, tornando a visita mais envolvente e educativa.</p>
+    <p className="cal-sans-regular">Promovemos workshops de barista e degustações de café semanalmente, onde os clientes podem aprender sobre a arte do café e experimentar a preparação de suas próprias bebidas, tornando a visita mais envolvente e educativa.</p>
   </article>
 </Wrapper>
-      <h1 className="valores-title">Experiências Interativas no Café Sem Filtro: Como Funciona?</h1>
-      <h5 className="text-valores">Aqui no Café Sem Filtro, você não só toma um café incrível, você também aprende a prepará-lo!
+      <h1 className="playfair-title">Experiências Interativas no Café Sem Filtro: Como Funciona?</h1>
+      <h5 className="cal-sans-regular">Aqui no Café Sem Filtro, você não só toma um café incrível, você também aprende a prepará-lo!
       <br/>
       <br/>
       Toda semana, promovemos workshops de barista e degustações especiais, onde nossos especialistas te ensinam técnicas de preparo, segredos do café artesanal e te convidam a experimentar sabores únicos.
@@ -333,8 +333,8 @@ export default Landing
 const Wrapper = styled.section`
   width: 100%;
   max-width: 990px;
-  left: 0px;
-  padding: 2rem;
+  
+  padding: 0rem;
   display: grid;
   gap: 6rem;
   grid-template-columns: repeat(3, 1fr); 
@@ -395,5 +395,4 @@ const Wrapper = styled.section`
     }
   }
 `
-
 
