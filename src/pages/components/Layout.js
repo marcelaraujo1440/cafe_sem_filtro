@@ -7,10 +7,10 @@ import "../assets/css/main.css"
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
-      {/* Imagem de fundo */}
+      {/* imagem de fundo */}
       <div className="background-image"></div>
 
-      {/* Conteúdo principal */}
+      {/* conteudo principal */}
       <Navbar />
       {children}
       <Footer />

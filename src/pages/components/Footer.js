@@ -13,30 +13,30 @@ const Footer = () => {
             <img src={logo} alt='Logo café sem filtro'/>
             </div>
             <div className='slogan'>
-                <p>
+                <p className="raleway">
                     Mais que café, uma pausa com propósito.
                 </p>
             </div>
         </div>
         <div className='collum-3'>
             <div className='cardapio-link'>
-                  <AnchorLink to="#cardapio">Veja o Cardápio</AnchorLink>
+                  <AnchorLink  to="#cardapio"  className="raleway">Veja o Cardápio</AnchorLink>
             </div>
             <div className='slogan'>
-                <p>
+                <p className="raleway">
                     Grãos escolhidos com cuidado. Cada xícara, uma história.
                 </p>
             </div>
         </div>
         <div className='collum-3'>
             <div className='informacoes'>
-                <p>
+                <p className="raleway">
                     Localização: Rua dos Grãos de Café - CEP 12345-678
                 </p>
-                <p>
+                <p className="raleway">
                     Horário de funcionamento: 06:00 -  19:00 de Seg a Sáb.
                 </p>
-                <p>
+                <p className="raleway">
                     Telefone: (11) 99140-7988 - Whatsapp
                 </p>
 
