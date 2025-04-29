@@ -13,5 +13,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   `gatsby-plugin-anchor-links`,
-`gatsby-plugin-react-helmet`,],
+`gatsby-plugin-react-helmet`,
+`gatsby-plugin-purgecss`,],
 }

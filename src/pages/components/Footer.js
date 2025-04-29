@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../assets/images/logo.png'
-import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
@@ -10,7 +10,16 @@ const Footer = () => {
         
         <div className='collum-3'>
             <div className='image-container'>
-            <img src={logo} alt='Logo café sem filtro'/>
+            <StaticImage 
+               src="../assets/images/logo.png" 
+               alt='Logo do Café Sem Filtro'
+               placeholder='blurred'
+               layout="fixed"
+               width={180}
+               height={100}
+               quality={100}
+               objectFit="contain"
+             />
             </div>
             <div className='slogan'>
                 <p className="raleway">

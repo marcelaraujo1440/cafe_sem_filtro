@@ -79,36 +79,43 @@ const Landing = () => {
     <Layout>
       
       <Helmet>
-      <html lang="pt-BR"/>
-      <title>Café Sem Filtro</title>
+          <html lang="pt-BR"/>
+          <title>Café Sem Filtro</title>
+          
+         {/* isso aqui serve para a otimização de fontes */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100..900&family=Roboto:wght@100..900&display=swap" 
+          media="print" 
+          onLoad="this.media='all'"
+        />
+        <link 
+          rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300..900;1,300..900&display=swap" 
+          media="print" 
+          onLoad="this.media='all'"
+        />
       </Helmet>
      
       <main className='page'>
-          <section className='about-page'>
-            <article>
-            <h1>Bem-vindo ao</h1>
-            <h2 className="playfair-title">Café Sem Filtro</h2>
-            <h3 className="open-sans">
-              Café Sem Filtro é uma cafeteria artesanal com a proposta de ser saudável, original e acolhedora. 
-              Aqui, o café vai além da bebida, é uma experiência sensorial e afetiva. 
-              Trabalhamos com grãos selecionados de pequenos produtores, cultivados de forma sustentável e preparados com métodos especiais como prensa francesa, siphon e cold brew.
-            </h3>
-              
-            </article>
-            <StaticImage src="../pages/assets/images/sobre.png" alt='Grãos de café inteiros e café moído em recipientes escuros sobre uma superfície preta, com folhas verdes de café ao redor'
-            className='about-img'
-            quality={80} 
-            loading="eager"
-            placeholder='blurred'/>
-          </section>
-
-
-
-
-          <section id="valores"className='valores-page' >
-            <article>
-            <h1 className="title">Nossos ­Valores</h1>
-
+           {/* Sobre nós */}
+      <section className="about-page">
+        <article>
+          <h1>Bem-vindo ao</h1>
+          <h2 className="playfair-title">Café Sem Filtro</h2>
+          <h3 className="open-sans">
+            Café Sem Filtro é uma cafeteria artesanal com a proposta de ser saudável, original e acolhedora. Aqui, o café vai além da bebida, é uma experiência sensorial e afetiva.
+            Trabalhamos com grãos selecionados de pequenos produtores, cultivados de forma sustentável e preparados com métodos especiais como prensa francesa, siphon e cold brew.
+          </h3>
+        </article>
+        <StaticImage src="../pages/assets/images/sobre.png" alt="Grãos de café e folhas verdes" className="about-img" quality={80} placeholder="blurred" />
+      </section>
+      {/* Nossos valores */}
+      <section id="valores"className='valores-page' >
+          <article>
+            <h1 className="title">Nossos valores</h1>
               <Wrapper>
               <article>
     <StaticImage src='../pages/assets/images/french.png' alt='Prensa francesa'
@@ -152,11 +159,8 @@ const Landing = () => {
       
       </article>
     </section>
-  
 
-
-
-  
+   {/* Cardápio */}
   <h1 id="cardapio" className="title">Cardápio</h1>
   <section className="cardapio-page">
     <article>
@@ -168,6 +172,7 @@ const Landing = () => {
           placeholder='blurred'
           layout='constrained'
           className='example-img'
+          loading="lazy"
         />
         <div className="card-content">
           <h4>Aurora da Serra</h4>
@@ -180,6 +185,7 @@ const Landing = () => {
           placeholder='blurred'
           layout='constrained'
           className='example-img'
+          loading="lazy"
           />
             <div className="card-content">
               <h4>Café do Barista</h4>
@@ -192,6 +198,7 @@ const Landing = () => {
           placeholder='blurred'
           layout='constrained'
           className='example-img'
+          loading="lazy"
           />
             <div className="card-content">
               <h4>Encanto do Siphon</h4>
@@ -204,6 +211,7 @@ const Landing = () => {
           placeholder='blurred'
           layout='constrained'
           className='example-img'
+          loading="lazy"
           />
             <div className="card-content">
               <h4>Luar do Cerrado</h4>
@@ -218,10 +226,10 @@ const Landing = () => {
         placeholder='blurred'
         layout='constrained'
         className='example-img'
+        loading="lazy"
         />
       </div>
     </article>
-
 
     <article>
       <h3>CAFÉ GELADO</h3>
@@ -231,6 +239,7 @@ const Landing = () => {
           <StaticImage src='../pages/assets/images/iced-coffee.png' alt='Copo com café e gelo'
           placeholder='blurred'
           layout='constrained'
+          loading="lazy"
           className='example-img'
           />
             <div className="card-content">
@@ -243,6 +252,7 @@ const Landing = () => {
           <StaticImage src='../pages/assets/images/coffee-orange.png' alt='Xícara de espresso com um copo de suco de laranja ao lado'
           placeholder='blurred'
           layout='constrained'
+           loading="lazy"
           className='example-img'
           />
             <div className="card-content">
@@ -255,6 +265,7 @@ const Landing = () => {
           <StaticImage src='../pages/assets/images/latte_gelado.png' alt='Xícara de café latte gelado'
           placeholder='blurred'
           layout='constrained'
+           loading="lazy"
           className='example-img'
           />
             <div className="card-content">
@@ -267,6 +278,7 @@ const Landing = () => {
           <StaticImage src='../pages/assets/images/espuma.png' alt='Xícara de cafe com uma espuma em cima'
           placeholder='blurred'
           layout='constrained'
+           loading="lazy"
           className='example-img'
           />
             <div className="card-content" >
@@ -281,11 +293,11 @@ const Landing = () => {
         width={1200}
         placeholder='blurred'
         layout='constrained'
+         loading="lazy"
         className='example-img'
         />
       </div>
     </article>
-
 
     <article>
       <h3>SALGADOS</h3>
@@ -295,6 +307,7 @@ const Landing = () => {
           <StaticImage src='../pages/assets/images/croissant.png' alt='Croissant'
           placeholder='blurred'
           layout='constrained'
+           loading="lazy"
           className='example-img'
           />
             <div className="card-content">
@@ -307,6 +320,7 @@ const Landing = () => {
           <StaticImage src='../pages/assets/images/pao-de-queijo.png' alt='Pão de queijo'
           placeholder='blurred'
           layout='constrained'
+           loading="lazy"
           className='example-img'
           />
             <div className="card-content" >
@@ -322,6 +336,7 @@ const Landing = () => {
       height={300}
         placeholder='blurred'
         layout='constrained'
+         loading="lazy"
         className='example-img'
         />
       </div>
@@ -336,6 +351,7 @@ const Landing = () => {
           <StaticImage src='../pages/assets/images/cake.png' alt='Bolo de cacau'
           placeholder='blurred'
           layout='constrained'
+           loading="lazy"
           className='example-img'
           />
             <div className="card-content" >
@@ -348,6 +364,7 @@ const Landing = () => {
           <StaticImage src='../pages/assets/images/tiramisu.png' alt='Tiramisù '
           placeholder='blurred'
           layout='constrained'
+           loading="lazy"
           className='example-img'
           />
             <div className="card-content" >
@@ -363,29 +380,25 @@ const Landing = () => {
         height={300}
         placeholder='blurred'
         layout='constrained'
+         loading="lazy"
         className='example-img'
         />
       </div>
     </article>
   </section>
 
-
-
+  {/* Contato */}
   <section id="contato" className="contato-page">
-      <h1 className="title">Contato</h1>
-      <h2 className="text-contato open-sans">Peça pelo Whatsapp!</h2>
-      <h3 className="text-contato raleway">Fale com a gente agora!</h3>
-      <div className="img-contato">
-        <a href="https://web.whatsapp.com/">
-        <StaticImage src='../pages/assets/images/whatsapp.png' alt='Logo do Whatsapp'
-            placeholder='blurred'
-            layout='constrained'
-            className='img-contato'
-            />
-          </a>
-        </div> 
-      </section>
-   </main>
+          <h1 className="title">Contato</h1>
+          <h2 className="text-contato open-sans">Peça pelo Whatsapp!</h2>
+          <h3 className="text-contato raleway">Fale com a gente agora!</h3>
+          <div className="img-contato">
+            <a href="https://web.whatsapp.com/">
+              <StaticImage src="../pages/assets/images/whatsapp.png" alt="Logo do Whatsapp"  loading="lazy" placeholder="blurred" layout="constrained" className="img-contato" />
+            </a>
+          </div>
+   </section>
+  </main>
   </Layout>
   )
 }
