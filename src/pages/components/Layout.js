@@ -9,7 +9,6 @@ const Layout = ({ children }) => {
     <React.Fragment>
       {/* imagem de fundo */}
       <div className="background-image"></div>
-
       {/* conteudo principal */}
       <Navbar />
       {children}

@@ -32,19 +32,19 @@ const Navbar = () => {
 
       <div className={show ? "nav-links show-links" : "nav-links"}>
         <div className="left-links">
-          <AnchorLink to="#sobre" className="nav-link" onClick={() => setShow(false)}>
+          <AnchorLink to="#sobre" className="nav-link raleway" onClick={() => setShow(false)}>
             Sobre nós
           </AnchorLink>
-          <AnchorLink to="#valores" className="nav-link" onClick={() => setShow(false)}>
+          <AnchorLink to="#valores" className="nav-link raleway" onClick={() => setShow(false)}>
             Nossos Valores
           </AnchorLink>
         </div>
 
         <div className="right-links">
-          <AnchorLink to="#cardapio" className="nav-link" onClick={() => setShow(false)}>
+          <AnchorLink to="#cardapio" className="nav-link raleway" onClick={() => setShow(false)}>
             Cardápio
           </AnchorLink>
-          <AnchorLink to="#contato" className="nav-link" onClick={() => setShow(false)}>
+          <AnchorLink to="#contato" className="nav-link raleway" onClick={() => setShow(false)}>
             Contato
           </AnchorLink>
         </div>

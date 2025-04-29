@@ -1,13 +1,11 @@
 import React from "react"
 import Layout from "./components/Layout"
-import { Link } from "gatsby"
 import "./assets/css/main.css"
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Helmet } from "react-helmet";
 
 
-//pesquisar dps pq usou o wrapper, para a aprensentação
 const Wrapper = styled.section`
 width: 100%;
 max-width: 990px;
@@ -81,25 +79,9 @@ const Landing = () => {
       <Helmet>
           <html lang="pt-BR"/>
           <title>Café Sem Filtro</title>
-          
-         {/* isso aqui serve para a otimização de fontes */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link 
-          rel="stylesheet" 
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100..900&family=Roboto:wght@100..900&display=swap" 
-          media="print" 
-          onLoad="this.media='all'"
-        />
-        <link 
-          rel="stylesheet" 
-          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300..900;1,300..900&display=swap" 
-          media="print" 
-          onLoad="this.media='all'"
-        />
       </Helmet>
      
-      <main className='page'>
+      <main id="main" className='page'>
            {/* Sobre nós */}
       <section className="about-page">
         <article>
@@ -221,8 +203,8 @@ const Landing = () => {
           </li>
         </ul>
         <StaticImage src="../pages/assets/images/cafe_barista.png" alt="Xícara de espresso duplo sendo feito escrito Café do Barista ao lado"
-        width={1200}
-        height={300}
+
+     
         placeholder='blurred'
         layout='constrained'
         className='example-img'
@@ -290,7 +272,7 @@ const Landing = () => {
           
         </ul>
         <StaticImage src="../pages/assets/images/img_cold_brew.png" alt="Copo com café e gelo escrito Cold Brew ao lado"
-        width={1200}
+        
         placeholder='blurred'
         layout='constrained'
          loading="lazy"
@@ -332,8 +314,7 @@ const Landing = () => {
           
         </ul>
         <StaticImage src="../pages/assets/images/pao_de_queijo.png" alt="Pão de queijo escrito Pão de queijo ao lado "
-        width={1200}
-      height={300}
+     
         placeholder='blurred'
         layout='constrained'
          loading="lazy"
@@ -376,8 +357,7 @@ const Landing = () => {
           
         </ul>
         <StaticImage src="../pages/assets/images/tiramisu_2.png" alt="Um prato com Tiramisù escrito Tiramisù ao lado"
-        width={1200}
-        height={300}
+       
         placeholder='blurred'
         layout='constrained'
          loading="lazy"
